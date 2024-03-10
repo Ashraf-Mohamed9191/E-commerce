@@ -1,0 +1,36 @@
+<section class="my-3">
+  <div class="container">
+    <div class="row g-4">
+      <div
+        class="col-md-4"
+        *ngFor="let item of categoriesData"
+        (click)="displaySubCategory(item._id, item.name)"
+      >
+        <div class="product">
+          <img
+            [src]="item.image"
+            class="w-100"
+            height="300"
+            [alt]="item.name"
+          />
+          <h3 class="text-main text-center p-3">{{ item.name }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="my-5">
+  <h2 class="text-main text-center mb-3" *ngIf="subCategoryData.length > 0">
+    {{ categoryName }} subcategories
+  </h2>
+  <div class="container my-2">
+    <div class="row g-4">
+      <div class="col-md-4" *ngFor="let item of subCategoryData">
+        <div class="product">
+          <h3 class="p-3 text-center">{{ item.name }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

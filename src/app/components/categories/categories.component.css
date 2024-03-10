@@ -1,0 +1,10 @@
+.product {
+  border-radius: 5px;
+  border: solid 1px rgb(182, 180, 180);
+  transition: box-shadow 0.5s;
+  overflow: hidden;
+}
+
+.product:hover {
+  box-shadow: 0 0 15px #11bd1168;
+}

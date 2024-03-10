@@ -1,0 +1,17 @@
+.product {
+  border-radius: 5px;
+  border: solid 1px rgba(182, 180, 180, 0.59);
+  transition: box-shadow 0.5s;
+  overflow: hidden;
+}
+
+.product:hover {
+  box-shadow: 0 0 15px #11bd1168;
+}
+
+/* .details {
+  width: 100%;
+  height: 100%;
+  background-color: #0000002d;
+  position: fixed;
+} */

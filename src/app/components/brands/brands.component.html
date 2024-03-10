@@ -1,0 +1,15 @@
+<!-- <div class="details"></div> -->
+
+<section class="py-4">
+  <div class="container my-4">
+    <h1 class="text-main text-center">All Brands</h1>
+    <div class="row g-4 my-4">
+      <div class="col-md-3" *ngFor="let item of brandsData">
+        <div class="product">
+          <img [src]="item.image" class="w-100" [alt]="item.name" />
+          <p class="text-center font-sm p-3">{{ item.name }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
